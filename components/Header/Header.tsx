@@ -9,7 +9,7 @@ import styles from '../../styles/Base.module.css'
 // Props interface
 // with username set to string
 interface Props {
-  title: string;
+  title?: string;
 }
 
 // Defining NextPage as

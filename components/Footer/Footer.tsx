@@ -10,7 +10,7 @@ import styles from '../../styles/Base.module.css'
 // Props interface
 // with username set to string
 interface Props {
-  title: string;
+
 }
 
 // Defining NextPage as
@@ -18,7 +18,7 @@ interface Props {
 // and defining type for props
 const Footer: NextPage<Props> = (props) => {
   // using destructuring to get username
-  const { title } = props;
+  // const { title } = props;
 
   return (
     <footer className={styles.footer}>
