@@ -2,8 +2,8 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import Footer from '../components/footer'
-import Header from '../components/header'
+import Footer from '../components/Footer/Footer'
+import Header from '../components/Header/Header'
 import styles from '../styles/Base.module.css'
 
 const Home: NextPage = () => {
@@ -23,19 +23,21 @@ const Home: NextPage = () => {
         <h1>Home</h1>
 
         <section className={styles.listSection}>
-          <h2>Projects</h2>
+          <h2>Recent Projects</h2>
           <ul>
             <li><Link href="#">Sammlung Bitter</Link>, <span className={styles.annotation}>upcoming</span></li>
-            <li>Schola Vitae e.V., <span className={styles.annotation}>upcoming</span></li>
-            <li>SchoolBridges Alumni Association e.V., <span className={styles.annotation}>upcoming</span></li>
-            <li>ThKW Election Simulator, <span className={styles.annotation}>upcoming</span></li>
+            {/*
+              <li>Schola Vitae e.V., <span className={styles.annotation}>upcoming</span></li>
+              <li>SchoolBridges Alumni Association e.V., <span className={styles.annotation}>upcoming</span></li>
+              <li>ThKW Election Simulator, <span className={styles.annotation}>upcoming</span></li>
+            */}
           </ul>
         </section>
 
         <section className={styles.listSection}>
           <h2>Blog</h2>
           <ul>
-            <li><span className={styles.annotation}>upcoming</span></li>
+            {/* <li><span className={styles.annotation}>upcoming</span></li> */}
           </ul>
         </section>
 
