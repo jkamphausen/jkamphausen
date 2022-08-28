@@ -2,8 +2,9 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import Footer from '../components/Footer/Footer'
-import Header from '../components/Header/Header'
+import List from '../components/atoms/list/list'
+import Footer from '../components/organisms/footer/footer'
+import Header from '../components/organisms/header/header'
 import styles from '../styles/Base.module.css'
 
 const Home: NextPage = () => {
@@ -24,18 +25,39 @@ const Home: NextPage = () => {
 
         <section className={styles.listSection}>
           <h2>Recent Projects</h2>
-          <ul>
-            <li><Link href="#">Sammlung Bitter</Link>, <span className={styles.annotation}>upcoming</span></li>
-            <li><Link href="#">SchoolBridges Alumni Association e.V.</Link>, <span className={styles.annotation}>upcoming</span></li>
-            {/*
-              <li>Schola Vitae e.V., <span className={styles.annotation}>upcoming</span></li>
-              <li>ThKW Election Simulator, <span className={styles.annotation}>upcoming</span></li>
-            */}
-          </ul>
+          <List>
+            {/* <li><Link href="#">Sammlung Bitter</Link>, <span className={styles.annotation}>upcoming</span></li>
+            <li><Link href="#">SchoolBridges Alumni Association e.V.</Link>, <span className={styles.annotation}>upcoming</span></li> */}
+            <li>
+              Sammlung Bitter,
+              <span className={styles.annotation}> upcoming</span>
+              <br /><span className={styles.annotation}>Digitally capture, prepare and make available selected pieces of the 'Bitter Collection' - a Stone Age collection of a local historian & archaeologist.</span>
+            </li>
+            {/* <li>
+              SchoolBridges Alumni Association e.V.,
+              <span className={styles.annotation}> upcoming</span>
+            </li> */}
+            <li>
+              Schola Vitae e.V., <span className={styles.annotation}>2019 - 2021</span>
+              <br/><span className={styles.annotation}>Advice on setting up associations, non-profit status and projects.</span>
+            </li>
+            <li>
+              Management of the first-time voter project of the Free State of Thuringia,
+              <span className={styles.annotation}>2018 - 2019</span>
+              <br /><span className={styles.annotation}>Including in-house development of a local election simulator used in schools based on the example of real ballots. </span>
+            </li>
+
+          </List>
         </section>
 
         <section className={styles.listSection}>
           <h2>Blog</h2>
+
+          {/* <List>
+            <li><Link href="#">Article A</Link>, <span className={styles.annotation}>upcoming</span></li>
+            <li><Link href="#">Article B</Link>, <span className={styles.annotation}>upcoming</span></li>
+          </List> */}
+
           <ul>
             {/* <li><span className={styles.annotation}>upcoming</span></li> */}
           </ul>

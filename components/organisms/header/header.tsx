@@ -1,10 +1,11 @@
-/* Header.tsx component */
+/* header.tsx component */
 
 // import NextPage generic type
 import { NextPage } from "next";
 
 import Link from 'next/link'
-import styles from '../../styles/Base.module.css'
+import Navbar from "../../molecules/navbar/navbar";
+import styles from './header.module.css'
 
 // Props interface
 // with username set to string
@@ -26,10 +27,16 @@ const Header: NextPage<Props> = (props) => {
           JKΛMPHΛUS<span className={styles.e}>Ξ</span>N
         </a>
       </Link>
-      <nav className={styles.headerNav}>
+
+      <Navbar navItems={[
+        { label: 'Home', url: '/' },
+        { label: 'About', url: '/about' }
+      ]} />
+
+      {/* <nav className={styles.headerNav}>
         <Link href="/">Home</Link>
         <Link href="/about">About</Link>
-      </nav>
+      </nav> */}
     </header>
   )
 };
