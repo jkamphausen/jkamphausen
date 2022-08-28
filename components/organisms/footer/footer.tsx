@@ -1,11 +1,11 @@
 
-/* Footer.tsx component */
+/* footer.tsx component */
 
 // import NextPage generic type
 import { NextPage } from "next";
 
 import Link from 'next/link'
-import styles from '../../styles/Base.module.css'
+import styles from './footer.module.css'
 
 // Props interface
 // with username set to string
@@ -22,7 +22,7 @@ const Footer: NextPage<Props> = (props) => {
 
   return (
     <footer className={styles.footer}>
-      ©2021 Julian Kamphausen
+      ©2022 Julian Kamphausen
     </footer>
   )
 }
